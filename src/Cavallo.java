@@ -24,7 +24,7 @@ public class Cavallo implements Runnable{
             try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+                //throw new RuntimeException(e);
             }
         }
         System.out.println(nome + " ha finito!");

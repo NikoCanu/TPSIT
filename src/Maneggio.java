@@ -19,6 +19,13 @@ public class Maneggio {
             cv.start();
         }
 
+        try {
+            for (Thread cv : cavalli) {
+                cv.join();
+            }
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         System.out.println("La gara è terminata!!");
     }
